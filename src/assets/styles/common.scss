@@ -9,11 +9,11 @@
 html,
 body {
   font-size: 16px;
-  //@include H300;
+  @include Subtitle;
   width: 100%;
   height: 100%;
-  //color: $black;
-  //background-color: $N300;
+  color: $t-secondary;
+  background-color: $bg-main;
   cursor: default;
   position: relative;
   -webkit-font-smoothing: antialiased; // for better fonts display on Mac
@@ -32,8 +32,4 @@ li {
 }
 input {
   outline: none;
-}
-#app {
-  width: 100vw;
-  height: 100vh;
 }
