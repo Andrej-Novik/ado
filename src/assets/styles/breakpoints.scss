@@ -1,5 +1,5 @@
 $mobile: 482px;
-$tablet: 768px;
+$tablet: 834px;
 $bigTablet: 992px;
 $laptop: 1440px;
 $desktop: 1920px;
@@ -21,7 +21,6 @@ $desktop: 1920px;
     @content;
   }
 }
-// TODO: Fix Chrome bug later
 @mixin isHover {
   @media (min-width: $bigTablet) {
     @content;

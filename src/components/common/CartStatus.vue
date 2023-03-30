@@ -11,6 +11,8 @@ export default {
     status: {
       type: String,
       default: "",
+      validator: (value) =>
+        ["Оплачен", "Отложен", "Ожидает оплаты"].includes(value),
     },
   },
   computed: {
