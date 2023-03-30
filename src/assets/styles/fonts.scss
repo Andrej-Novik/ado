@@ -1,0 +1,60 @@
+@mixin H1 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 120%;
+}
+@mixin H2 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 120%;
+}
+@mixin H3 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 120%;
+}
+@mixin ButtonText {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 120%;
+}
+@mixin Title {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 120%;
+}
+@mixin Subtitle {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 120%;
+}
+@mixin Body1 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+}
+@mixin Body2 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 130%;
+}
+@mixin Body3 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 130%;
+}
+@mixin Caption {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 0.625rem;
+  line-height: 130%;
+}
