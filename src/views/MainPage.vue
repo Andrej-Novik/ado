@@ -1,14 +1,14 @@
 <template>
   <div>
-    <CallButton :color="'red'" :icon="'./icons/red-call.svg'" />
+    <CartStatus :status="'Ожидает оплаты'" />
   </div>
 </template>
 
 <script>
-import CallButton from "@/components/common/CallButton.vue";
+import CartStatus from "@/components/common/CartStatus.vue";
 export default {
   components: {
-    CallButton,
+    CartStatus,
   },
 };
 </script>
