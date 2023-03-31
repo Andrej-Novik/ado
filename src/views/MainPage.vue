@@ -1,14 +1,14 @@
 <template>
   <div>
-    <CartStatus :status="'Ожидает оплаты'" />
+    <PhoneInput />
   </div>
 </template>
 
 <script>
-import CartStatus from "@/components/common/CartStatus.vue";
+import PhoneInput from "@/components/common/PhoneInput.vue";
 export default {
   components: {
-    CartStatus,
+    PhoneInput,
   },
 };
 </script>

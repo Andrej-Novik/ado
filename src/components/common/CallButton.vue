@@ -2,6 +2,7 @@
   <button
     :class="[$style.button, { [$style.disabled]: disabled }, $style[color]]"
     :disabled="disabled"
+    @click="$emit('click')"
   >
     <img :src="icon" alt="" />
   </button>
