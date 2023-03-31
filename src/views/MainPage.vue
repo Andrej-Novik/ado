@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PhoneInput />
+    <PhoneInput type="red" />
   </div>
 </template>
 

@@ -32,7 +32,8 @@ export default {
   props: {
     type: {
       type: String,
-      default: "green",
+      default: "",
+      required: true,
       validator: (value) => ["red", "green"].includes(value),
     },
   },
@@ -58,12 +59,12 @@ export default {
   },
   computed: {
     buttunType() {
-      let type = {
-        color: "green",
-        icon: "/icons/green-call.svg",
-      };
+      let type = {};
       if (this.type === "red") {
         (type.color = "red"), (type.icon = "/icons/red-call.svg");
+      }
+      if (this.type === "green") {
+        (type.color = "green"), (type.icon = "/icons/green-call.svg");
       }
       return type;
     },
