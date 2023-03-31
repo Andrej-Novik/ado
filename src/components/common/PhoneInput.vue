@@ -5,6 +5,7 @@
         type="text"
         :placeholder="'(967) 491-85-91'"
         v-model="phoneValue"
+        @focus="onPress"
       />
     </div>
     <div :class="$style.steps">
@@ -57,6 +58,17 @@ export default {
     },
     callPhone() {
       this.phoneValue = "+375";
+    },
+    onPress() {
+      const values = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+      document.addEventListener("keydown", function (event) {
+        if (values.includes(event.key)) {
+          this.phoneValue += event.key;
+        }
+        if (event.key === "Backspace") {
+          this.phoneValue = this.phoneValue.slice(0, -1);
+        }
+      });
     },
   },
 };
