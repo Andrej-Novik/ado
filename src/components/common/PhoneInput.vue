@@ -22,13 +22,20 @@
         {{ item }}
       </div>
     </div>
-    <CallButton :color="'green'" :icon="'/icons/green-call.svg'" />
+    <CallButton :color="buttunType.color" :icon="buttunType.icon" />
   </form>
 </template>
 
 <script>
 import CallButton from "@/components/common/CallButton.vue";
 export default {
+  props: {
+    type: {
+      type: String,
+      default: "green",
+      validator: (value) => ["red", "green"].includes(value),
+    },
+  },
   data() {
     return {
       values: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "*", "0", "#"],
@@ -48,6 +55,18 @@ export default {
       ],
       phoneValue: "+375",
     };
+  },
+  computed: {
+    buttunType() {
+      let type = {
+        color: "green",
+        icon: "/icons/green-call.svg",
+      };
+      if (this.type === "red") {
+        (type.color = "red"), (type.icon = "/icons/red-call.svg");
+      }
+      return type;
+    },
   },
   components: {
     CallButton,
