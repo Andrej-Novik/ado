@@ -1,14 +1,20 @@
 <template>
-  <div>
-    <PhoneInput type="red" />
+  <div :class="$style.container">
+    hello world
   </div>
 </template>
 
-<script>
-import PhoneInput from "@/components/common/PhoneInput.vue";
+<!-- <script>
+import CreateOrder from "@/components/common/CreateOrder.vue";
 export default {
   components: {
-    PhoneInput,
+    CreateOrder,
   },
 };
-</script>
+</script> -->
+
+<style lang="scss" module>
+.container {
+  @include container;
+}
+</style>

@@ -85,7 +85,7 @@ export default {
     },
     callPhone() {
       this.validatePhone();
-      alert(this.phoneValue);
+      //alert(this.phoneValue);
       this.phoneValue = "+375";
     },
   },
